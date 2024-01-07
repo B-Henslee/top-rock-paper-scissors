@@ -17,24 +17,31 @@ function getPlayerChoice (){
 }
 
 function playRound(playerChoice,computerChoice){
-
-    if (playerChoice === "rock" && computerChoice === "scissors" || 
-        playerChoice === "paper" && computerChoice === "rock" ||
-        playerChoice === "scissors" && computerChoice === "paper"){
-            console.log("you win");
-    }
-    else if (playerChoice === "rock" && computerChoice === "paper" || 
-        playerChoice === "paper" && computerChoice === "scissors" ||
-        playerChoice === "scissors" && computerChoice === "rock"){
-                console.log ("you lose");
-            }
-    else {
-        console.log("draw")
-    }
+        if (playerChoice === "rock" && computerChoice === "scissors" || 
+            playerChoice === "paper" && computerChoice === "rock" ||
+            playerChoice === "scissors" && computerChoice === "paper"){
+                console.log("you win");
+        }
+        else if (playerChoice === "rock" && computerChoice === "paper" || 
+            playerChoice === "paper" && computerChoice === "scissors" ||
+            playerChoice === "scissors" && computerChoice === "rock"){
+                    console.log ("you lose");
+                }
+        else {
+            console.log("draw")
+        }
     return(playerChoice,computerChoice)
 }
 
-let playerChoice=getPlayerChoice();
-let computerChoice=getComputerChoice();
+function playGame(){
+    for (let rounds = 0; rounds < 5; rounds++){
+        let playerChoice=getPlayerChoice();
+        let computerChoice=getComputerChoice();
+        game=playRound(playerChoice,computerChoice);
 
-console.log(playRound(playerChoice,computerChoice));
+        console.log("Round:", rounds+ 1);
+        console.log(game);
+    }
+}
+
+playGame();
