@@ -1,0 +1,47 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/bricks.png);
+    height: 200px;
+    width: auto;
+    align-items: center;
+}
+.hero-container {
+    display: flex;
+    flex-grow: 1;
+    width: 600px;
+    color: #F9F871;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 15px;
+}
+.title{
+    font-size: 100px;
+    font-family: "Pixels";
+    padding: 0;
+    margin: 0;
+    animation-name: breathe;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+@keyframes breathe {
+    0% {
+      font-size: 95px;
+    }
+    
+    50% {
+      font-size: 100px;
+    }
+    
+    100% {
+      font-size: 95px;
+    }
+  }
