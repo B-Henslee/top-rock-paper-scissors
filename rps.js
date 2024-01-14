@@ -22,7 +22,6 @@ function getComputerChoice (){
     return (computerChoice);
 }
 
-
 function playRound(playerChoice){
     let computerChoice=getComputerChoice();
         if (playerChoice === "rock" && computerChoice === "scissors" || 
