@@ -1,13 +1,16 @@
 @font-face{
-  font-family: Arcade;
-  src: url(../../fonts/upheavtt.ttf)
+  font-family: 'Arcade';
+  src: url('arcadeclassic-webfont.woff2') format('woff2'),
+       url('arcadeclassic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 html, body, p{
     margin: 0;
     padding: 0;
 }
 body{
-  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -25,7 +28,7 @@ a{
     flex-direction: column;
     background-image: url(img/bricks.png);
     height: 200px;
-    width: 100vw;
+    width: auto;
     align-items: center;
     /* create the drop shadow effect */
     filter: drop-shadow(0px 2px 10px #000000);
@@ -76,8 +79,8 @@ a{
   background-color: #494464;
   color: #F9F871;
   -webkit-text-stroke: 2px black;
-  font-size: 35px;
-  height: 100vh;
+  font-size: 45px;
+  height: 100svh;
   justify-content: center;
 }
 .content-title{
@@ -102,6 +105,7 @@ a{
 .content-buttons{
   display: flex;
   max-width: 1000px;
+  margin-bottom: 75px;
 }
 
 #rock, #paper, #scissors {
@@ -113,10 +117,10 @@ a{
   border: #f9f971ce 4px solid;
   font-family: Arcade;
   color:#F9F871;
-  font-size: 30px;
+  font-size: 35px;
   border-radius: 8px;
   width: 25vw;
-  height: 275px;
+  height: 285px;
   margin: 20px;
 }
 
