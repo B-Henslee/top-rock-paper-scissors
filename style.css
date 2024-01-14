@@ -6,6 +6,20 @@ html, body, p{
     margin: 0;
     padding: 0;
 }
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a{
+  -webkit-text-stroke: 2px black; /* WebKit/Blink browsers */
+  color: transparent; /* Hide the actual text color */
+  color:#F9F871; /* Set your desired link color */
+  text-decoration: none; /* Optional: Remove underline or other decorations */
+
+
+
+}
 .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -51,15 +65,17 @@ html, body, p{
     }
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arcade;
   background-color: #494464;
-  color:#F9F871;
+  color: #F9F871;
   -webkit-text-stroke: 2px black;
-  font-size: 35px;  
+  font-size: 35px;
+  height: 100vh;
+  justify-content: center;
 }
 .content-title{
   display: flex;
@@ -91,7 +107,7 @@ html, body, p{
   align-items: center;
   flex-direction: column;
   background-color: #494464;
-  border: #F9F871 2px solid;
+  border: #f9f971ce 4px solid;
   font-family: Arcade;
   color:#F9F871;
   font-size: 30px;
@@ -99,4 +115,21 @@ html, body, p{
   width: 25vw;
   height: 275px;
   margin: 20px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/bricks.png);
+  font-family: arcade;
+  font-size: 30px;
+  color: #F9F871;
+  -webkit-text-stroke: 2px black;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  -webkit-tap-highlight-color: transparent;
+  
 }
