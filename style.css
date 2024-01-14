@@ -79,3 +79,24 @@ html, body, p{
   display: flex;
   justify-content: center;
 }
+
+.content-buttons{
+  display: flex;
+  max-width: 1000px;
+}
+
+#rock, #paper, #scissors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #494464;
+  border: #F9F871 2px solid;
+  font-family: Arcade;
+  color:#F9F871;
+  font-size: 30px;
+  border-radius: 8px;
+  width: 25vw;
+  height: 275px;
+  margin: 20px;
+}
