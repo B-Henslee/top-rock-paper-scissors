@@ -29,12 +29,12 @@ function updateScore(){
     computerScoreElement.textContent = 'Computer Score: ' + computerScore;
 
     if (playerScore >= 5){
-    alert("You win!")
+    alert("Ты победил!\nМастер Анна!\nя тебя люблю.")
     location.reload(); // Reload the page
     }
 
     else if (computerScore >= 5){
-    alert ("You lose");
+    alert ("Ты проиграл!\nТвоя жизнь мусор\n((");
     location.reload(); // Reload the page
     }
 }
