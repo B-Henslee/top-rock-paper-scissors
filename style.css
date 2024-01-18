@@ -140,3 +140,7 @@ button:active{
   -webkit-tap-highlight-color: transparent;
   filter: drop-shadow(0px 2px 10px #000000);
 }
+.github-logo{
+  height: 25px;
+  width: 25px;
+}
